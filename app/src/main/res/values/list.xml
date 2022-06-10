@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="study">
+    <item>Концентрация внимания. Метод помидора</item>
+    <item>Мотивация. Что делать,если лень учиться?</item>
+    <item>Ради чего я учусь?</item>
+    <item>Отношения с одноклассниками</item>
+    <item>Лайфхаки для учебы</item>
+    </string-array>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Planer"
+    android:background="@drawable/green_photo">
+
+    <LinearLayout
+        android:id="@+id/toDo"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:background="#95BC96"
+            android:padding="16dp"
+            android:text="@string/the_text_will_be_here"
+            android:textSize="20sp"
+            android:textColor="#6E0303"
+            >
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <LinearLayout
+            android:id="@+id/editList"
+            android:layout_width="175dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/inputCase"
+                android:layout_width="193dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Введите задачу"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cases"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveCase"
+            style="@style/ShapeAppearance.Material3.LargeComponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:backgroundTint="#95BC96"
+            android:onClick="SaveTasks"
+            android:text="@string/saveTaskList"
+            android:textColor="#63030B"
+            app:cornerRadius="5dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/taskList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="173dp"
+        />
+
+
+
+
+</FrameLayout>

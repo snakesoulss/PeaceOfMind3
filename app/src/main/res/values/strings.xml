@@ -15,7 +15,7 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="saveTaskList">Нажмите,чтобы сохранить или увидеть список дел</string>
+    <string name="saveTaskList">Нажмите,чтобы сохранить задачу</string>
     <string name="study_and_mistery">УЧЕБА И ТАЙНЫ</string>
     <string name="title_activity_to_do_list">toDoList</string>
     <string name="first_fragment_label">First Fragment</string>

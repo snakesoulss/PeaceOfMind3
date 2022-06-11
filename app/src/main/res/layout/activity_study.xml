@@ -32,20 +32,19 @@
         >
 
         <com.sdsmdg.harjot.longshadows.LongShadowsTextView
-            android:shadowColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:text="@string/study_and_mistery"
             android:layout_marginTop="16dp"
+            android:shadowColor="@color/black"
+            android:text="@string/study_and_mistery"
+            android:textColor="@color/white"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textColor="@color/white"
             app:shadow_blur_enabled="true"
-            app:shadow_blur_radius="5"
-                     />
+            app:shadow_blur_radius="5" />
 
             </com.sdsmdg.harjot.longshadows.LongShadowsWrapper>
 

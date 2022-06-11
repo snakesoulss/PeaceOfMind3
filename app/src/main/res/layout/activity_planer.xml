@@ -70,6 +70,7 @@
         </com.google.android.material.button.MaterialButton>
 
     </LinearLayout>
+
     <ListView
         android:id="@+id/taskList"
         android:layout_width="match_parent"

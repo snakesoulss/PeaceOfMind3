@@ -6,8 +6,31 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@drawable/purple_phon"
     >
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="60dp">
+    <com.sdsmdg.harjot.longshadows.LongShadowsWrapper
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:gravity="center"
+        >
 
+        <com.sdsmdg.harjot.longshadows.LongShadowsTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/phon_for_card_text"
+            android:layout_height="200dp"
+            android:shadowColor="@color/white"
+            android:text=""
+            android:textColor="#3A1285"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:shadow_blur_enabled="true"
+            />
 
+    </com.sdsmdg.harjot.longshadows.LongShadowsWrapper>
+</ScrollView>
 <LinearLayout
     android:id="@+id/home"
     android:layout_width="wrap_content"
@@ -156,5 +179,7 @@ android:background="@drawable/purple_phon"
         </com.google.android.material.button.MaterialButton>
 
     </LinearLayout>
+
+
 
 </RelativeLayout>

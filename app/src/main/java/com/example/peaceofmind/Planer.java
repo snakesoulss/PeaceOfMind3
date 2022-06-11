@@ -76,7 +76,10 @@ public class Planer extends AppCompatActivity {
                 num.setNegativeButton("Cancel", null);
                 num.setPositiveButton("Ok", new AlertDialog.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        taskList.remove(positionToRemove);
+
+                        db.delete(InputContract.TaskEntry.TABLE, "title = ?",
+                                new String[]{taskList.get(positionToRemove)});
+                        taskList.remove(position);
                         adapter.notifyDataSetChanged();
                     }});
                 num.show();

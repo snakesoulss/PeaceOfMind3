@@ -17,7 +17,7 @@ public class Study extends AppCompatActivity {
     private ListView studyInf;
     private String number;
     String[] url = {"https://asana.com/ru/resources/pomodoro-technique","https://semyadeti.ru/kak-poborot-len-i-nachat-uchitsya.htm1",
-    "https://fb.ru/article/316144/zachem-nujno-uchitsya-dlya-chego-myi-uchimsya","https://strana-sovetov.com/kids/14/1748-teenager-classmates.html" +
+    "https://fb.ru/article/316144/zachem-nujno-uchitsya-dlya-chego-myi-uchimsya","https://strana-sovetov.com/kids/14/1748-teenager-classmates.html",
             "https://lifehacker.ru/23-hacks-for-studying/"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class Study extends AppCompatActivity {
            @Override
            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                Intent i = new Intent(Intent.ACTION_VIEW);
-               i.setData(Uri.parse(String.valueOf(url)));
+               i.setData(Uri.parse(String.valueOf(url[position])));
                startActivity(i);
            }
        });
